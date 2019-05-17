@@ -64,8 +64,8 @@
             <div id="add-course-form">
                 <form>
                     <div class="form-group">
-                        <label for="exampleInputCourseID">Email address</label>
-                        <input type="number" class="form-control" id="exampleInputCourseID" aria-describedby="emailHelp" placeholder="Enter Course ID">
+                        <label for="exampleInputCourseID">Course ID</label>
+                        <input type="text" class="form-control" id="exampleInputCourseID" aria-describedby="emailHelp" placeholder="Enter Course ID" readonly>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputCourseName">Course Name</label>
@@ -79,7 +79,7 @@
                         <label for="exampleInputCourseDuration">Course Duration</label>
                         <input type="number" class="form-control" id="exampleInputCourseDuration" placeholder="Enter Course Duration">
                     </div>
-                    <button id="" type="submit" class="btn btn-primary">Save Course</button>
+                    <button id="btn-course" type="button" class="btn btn-primary">Save Course</button>
                 </form>
             </div>
 
@@ -95,24 +95,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td>B1</td>
-                        <td>Lorem</td>
-                        <td>ipsum</td>
-                        <td>1,001</td>
-                    </tr>
-                    <tr>
-                        <td>B2</td>
-                        <td>amet</td>
-                        <td>consectetur</td>
-                        <td>1,002</td>
-                    </tr>
-                    <tr>
-                        <td>B3</td>
-                        <td>Integer</td>
-                        <td>nec</td>
-                        <td>1,002</td>
-                    </tr>
+
                     </tbody>
                 </table>
             </div>
@@ -123,4 +106,6 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/dashboard.js"></script></body>
+<script src="js/database.js"></script>
+<script src="js/manage-course.js"></script></body>
 </html>

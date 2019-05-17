@@ -85,6 +85,9 @@ function InsertAndUpdate(){
 }
 
 $(document).ready(function () {
+    $('#exampleInputBatchName').click(function () {
+        $(this).css('border-color',"black");
+    });
     //load dummy data to table
     for (var i=0; i<Batches.length;i++){
         $('tbody').append('<tr><td>'+Batches[i].id+'</td><td>'+Batches[i].name+'</td><td>'+Batches[i].courseid+'</td><td>'+Batches[i].courcename+'</td></tr>');
@@ -97,6 +100,7 @@ $(document).ready(function () {
 
     //load selected name to feild
     $('#course-id-combo').click(function () {
+        $(this).css('border-color',"black");
         var courseID = $('#course-id-combo').val();
         $('#exampleInputCourseName').val(findCourseName(courseID));
     });
