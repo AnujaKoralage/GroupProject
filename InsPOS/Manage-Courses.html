@@ -15,6 +15,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/dashboard.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/manage-courses.css">
 </head>
 <body>
 <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
@@ -60,18 +61,37 @@
                 <h1 class="h2">Manage Courses</h1>
             </div>
 
-            <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+            <div id="add-course-form">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputCourseID">Email address</label>
+                        <input type="number" class="form-control" id="exampleInputCourseID" aria-describedby="emailHelp" placeholder="Enter Course ID">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputCourseName">Course Name</label>
+                        <input type="text" class="form-control" id="exampleInputCourseName" placeholder="Enter Course Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputCourseDescription">Course Description</label>
+                        <input type="text" class="form-control" id="exampleInputCourseDescription" placeholder="Enter Course Description">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputCourseDuration">Course Duration</label>
+                        <input type="number" class="form-control" id="exampleInputCourseDuration" placeholder="Enter Course Duration">
+                    </div>
+                    <button id="" type="submit" class="btn btn-primary">Save Course</button>
+                </form>
+            </div>
 
-            <h2>Section title</h2>
+            <h2>All Courses</h2>
             <div class="table-responsive">
                 <table class="table table-striped table-sm">
                     <thead>
                     <tr>
-                        <th>#</th>
-                        <th>Header</th>
-                        <th>Header</th>
-                        <th>Header</th>
-                        <th>Header</th>
+                        <th>Course ID</th>
+                        <th>Course Name</th>
+                        <th>Course Description</th>
+                        <th>Course Duration</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -79,113 +99,19 @@
                         <td>1,001</td>
                         <td>Lorem</td>
                         <td>ipsum</td>
-                        <td>dolor</td>
-                        <td>sit</td>
+                        <td>1,001</td>
                     </tr>
                     <tr>
                         <td>1,002</td>
                         <td>amet</td>
                         <td>consectetur</td>
-                        <td>adipiscing</td>
-                        <td>elit</td>
+                        <td>1,002</td>
                     </tr>
                     <tr>
                         <td>1,003</td>
                         <td>Integer</td>
                         <td>nec</td>
-                        <td>odio</td>
-                        <td>Praesent</td>
-                    </tr>
-                    <tr>
-                        <td>1,003</td>
-                        <td>libero</td>
-                        <td>Sed</td>
-                        <td>cursus</td>
-                        <td>ante</td>
-                    </tr>
-                    <tr>
-                        <td>1,004</td>
-                        <td>dapibus</td>
-                        <td>diam</td>
-                        <td>Sed</td>
-                        <td>nisi</td>
-                    </tr>
-                    <tr>
-                        <td>1,005</td>
-                        <td>Nulla</td>
-                        <td>quis</td>
-                        <td>sem</td>
-                        <td>at</td>
-                    </tr>
-                    <tr>
-                        <td>1,006</td>
-                        <td>nibh</td>
-                        <td>elementum</td>
-                        <td>imperdiet</td>
-                        <td>Duis</td>
-                    </tr>
-                    <tr>
-                        <td>1,007</td>
-                        <td>sagittis</td>
-                        <td>ipsum</td>
-                        <td>Praesent</td>
-                        <td>mauris</td>
-                    </tr>
-                    <tr>
-                        <td>1,008</td>
-                        <td>Fusce</td>
-                        <td>nec</td>
-                        <td>tellus</td>
-                        <td>sed</td>
-                    </tr>
-                    <tr>
-                        <td>1,009</td>
-                        <td>augue</td>
-                        <td>semper</td>
-                        <td>porta</td>
-                        <td>Mauris</td>
-                    </tr>
-                    <tr>
-                        <td>1,010</td>
-                        <td>massa</td>
-                        <td>Vestibulum</td>
-                        <td>lacinia</td>
-                        <td>arcu</td>
-                    </tr>
-                    <tr>
-                        <td>1,011</td>
-                        <td>eget</td>
-                        <td>nulla</td>
-                        <td>Class</td>
-                        <td>aptent</td>
-                    </tr>
-                    <tr>
-                        <td>1,012</td>
-                        <td>taciti</td>
-                        <td>sociosqu</td>
-                        <td>ad</td>
-                        <td>litora</td>
-                    </tr>
-                    <tr>
-                        <td>1,013</td>
-                        <td>torquent</td>
-                        <td>per</td>
-                        <td>conubia</td>
-                        <td>nostra</td>
-                    </tr>
-                    <tr>
-                        <td>1,014</td>
-                        <td>per</td>
-                        <td>inceptos</td>
-                        <td>himenaeos</td>
-                        <td>Curabitur</td>
-                    </tr>
-                    <tr>
-                        <td>1,015</td>
-                        <td>sodales</td>
-                        <td>ligula</td>
-                        <td>in</td>
-                        <td>libero</td>
+                        <td>1,002</td>
                     </tr>
                     </tbody>
                 </table>
