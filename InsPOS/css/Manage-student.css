@@ -1,0 +1,15 @@
+#popup{
+position:fixed;
+    top:75px;
+right:100px;
+}
+#sid{
+    padding-bottom: 5px;
+}
+#sname{
+    padding-bottom: 5px;
+}
+
+#scontact{
+    padding-bottom: 5px;
+}

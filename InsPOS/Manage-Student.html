@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
     <title>Group</title>
 
@@ -15,6 +14,10 @@
 
     <!-- Custom styles for this template -->
     <link href="css/dashboard.css" rel="stylesheet">
+    <link href="css/Manage-student.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
@@ -22,7 +25,7 @@
     <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
     <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
-            <a class="nav-link" href="#">Sign out</a>
+
         </li>
     </ul>
 </nav>
@@ -58,9 +61,86 @@
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                 <h1 class="h2">Manage Students</h1>
-            </div>
 
-            <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+                </div>
+
+            <div class="container">
+                <!-- Trigger the modal with a button -->
+                <button id="popup" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">New student</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Add New Student</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                            </div>
+                            <div class="modal-body">
+                                <div id="sid">
+                                <input type="text" class="form-control" id="popupstudentid" aria-describedby="emailHelp" placeholder="Student Id">
+                                </div>
+
+                                    <div id="sname">
+                                <input type="text" class="form-control" id="popupstudentname" aria-describedby="emailHelp" placeholder="Student Name">
+                                    </div>
+                                <div id="scontact">
+
+                                <input type="text" class="form-control" id="popupstudentcontactno" aria-describedby="emailHelp" placeholder="Student contact No">
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Save</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div>
+                <form>
+                <div>
+                    <label>Select Student ID</label>
+                    <select id="studentid" class="form-control">
+                    </select>
+                </div>
+
+                <div class="form-group">
+
+                    <input type="text" class="form-control" id="exampleInputStudentName" aria-describedby="emailHelp" placeholder=" Student Name">
+
+                </div>
+
+                <div class="form-group">
+                    <label>Cource Id </label>
+                    <select id="courceid" class="form-control">
+                    </select>
+                </div>
+
+                    <div class="form-group">
+
+                        <input type="text" class="form-control" id="exampleInputCourseName" aria-describedby="emailHelp" placeholder=" Course Name">
+
+                    </div>
+
+                <div class="form-group">
+                    <label>Batch Id</label>
+                    <select id="batchid" class="form-control">
+
+                    </select>
+                </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="exampleInputBatchName" aria-describedby="emailHelp" placeholder="Batch Name">
+
+                    </div>
+
+                <button type="submit" class="btn btn-primary">Save</button>
+            </form>
+
+
 
             <h2>Section title</h2>
             <div class="table-responsive">
@@ -189,6 +269,12 @@
                     </tr>
                     </tbody>
                 </table>
+
+
+
+
+                </div>
+
             </div>
         </main>
     </div>
@@ -196,5 +282,8 @@
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/popper.min.js"></script>
-<script src="js/dashboard.js"></script></body>
+<script src="js/dashboard.js"></script>
+<script src="js/Manage-Student.js"></script>
+
+</body>
 </html>
