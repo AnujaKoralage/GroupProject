@@ -62,19 +62,21 @@
             <div><form>
                 <div>
                     <label>Select Cource</label>
-                    <select id="a" class="form-control">
+                    <select id="course-id-combo" class="form-control">
+
+                    </select>
                 </div>
 
 
                 </select>
                 <div class="form-group">
                     <label for="exampleInputCourseName">Course Name</label>
-                    <input type="text" class="form-control" id="exampleInputCourseName" aria-describedby="emailHelp" placeholder="Enter Course Name">
+                    <input type="text" class="form-control" id="exampleInputCourseName" aria-describedby="emailHelp" placeholder="Enter Course Name" readonly>
 
                 </div>
                 <div class="form-group">
                     <label for="exampleInputBatchId">Batch Id </label>
-                    <input type="text" class="form-control" id="exampleInputBatchId" placeholder="Password">
+                    <input type="text" class="form-control" id="exampleInputBatchId" placeholder="Enter Batch ID" readonly>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputBatchName">Batch Name</label>
@@ -82,7 +84,7 @@
 
                 </div>
 
-                <button type="submit" class="btn btn-primary">Save</button>
+                <button id="btn-batch" type="submit" class="btn btn-primary">Save</button>
             </form>
             </div>
 
@@ -101,27 +103,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td>1,001</td>
-                        <td>Lorem</td>
-                        <td>ipsum</td>
-                        <td>dolor</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>1,002</td>
-                        <td>amet</td>
-                        <td>consectetur</td>
-                        <td>adipiscing</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>1,003</td>
-                        <td>Integer</td>
-                        <td>nec</td>
-                        <td>odio</td>
-                        <td></td>
-                    </tr>
+
 
                     </tbody>
                 </table>
@@ -133,4 +115,6 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/dashboard.js"></script></body>
+<script src="js/database.js"></script></body>
+<script src="js/manage-batches.js"></script>
 </html>

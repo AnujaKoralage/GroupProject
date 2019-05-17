@@ -6,24 +6,24 @@ var Courses=[{
 },
     {
 
-        id:"C1",
-        name:"abc",
-        description:"def",
-        duration:"12"
+        id:"C2",
+        name:"abcd",
+        description:"def2",
+        duration:"8"
     }];
 
 var Batches=[{
     id:"B1",
     name:"def",
-    courseid:"c1",
+    courseid:"C1",
     courcename:"abc"
 
 },
     {
         id:"B2",
         name:"abc",
-        courseid:"c2",
-        courcename:"def"
+        courseid:"C2",
+        courcename:"abcd"
     }];
 
 var register = [
