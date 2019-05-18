@@ -5,10 +5,10 @@ This system use for manage courses,manage batches and register a student.
 
 ### Prerequisites
 ```
-intej idea
-bootstrap -v 4.31
-css3
-java script
+Intellj idea
+Bootstrap -v 4.31
+CSS3
+Java script
 ```
 ## Built With
 * [intelj idea](https://www.jetbrains.com/idea/) - The ide used 
@@ -18,9 +18,8 @@ java script
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+1.[AnujaKoralage](https://github.com/AnujaKoralage)
+2.[shehancshanaka](https://github.com/shehancshanaka)
 
 ## License
 
