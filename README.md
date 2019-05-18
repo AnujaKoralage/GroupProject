@@ -11,14 +11,15 @@ CSS3
 Java script
 ```
 ## Built With
-* [intelj idea](https://www.jetbrains.com/idea/) - The ide used 
-* [boostrp](https://getbootstrap.com/) - The css framework used
-* [css3](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3) - for style
-* [java script (ekma script)](https://www.javascript.com/) - Used to dynamicaly add data
+* [Intellj idea](https://www.jetbrains.com/idea/) - The ide used 
+* [Bootstrap](https://getbootstrap.com/) - The css framework used
+* [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3) - for style
+* [Java Script](https://www.javascript.com/) - Used to dynamicaly add data
 
 ## Authors
 
 1.[AnujaKoralage](https://github.com/AnujaKoralage)
+
 2.[shehancshanaka](https://github.com/shehancshanaka)
 
 ## License
