@@ -1,10 +1,4 @@
-function openForm() {
-    document.getElementById("myForm").style.display = "block";
-}
 
-function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-}
 
 function listnerToTr() {
     $('tbody tr').off('click');
@@ -67,6 +61,16 @@ function addYpdate(){
 }
 
 $(document).ready(function () {
+    $('#popupstudentcontactno').click(function () {
+        $('#popupstudentcontactno').css('border-color','black');
+    });
+    $('#popupstudentname').click(function () {
+        $('#popupstudentname').css('border-color','black');
+    });
+    $('#popupstudentid').click(function () {
+        $('#popupstudentid').css('border-color','black');
+    });
+
     //load data to combo boxes
     for (var i=0;i<student.length;i++){
         $('#studentid').append('<option value='+student[i].id+'>'+student[i].id+'</option>');
@@ -108,16 +112,35 @@ $(document).ready(function () {
     listnerToTr();
     addYpdate();
 
-    $('#addStu').click(function () {
+    $('#addStu').click(function (e) {
         var id = $('#popupstudentid').val();
         var name = $('#popupstudentname').val();
         var cnum = $('#popupstudentcontactno').val();
+        var valid = true;
 
-        student.push({
-            id:id,
-            name:name,
-            cnum:cnum
-        });
+        if ($.trim(id).length === 0){
+            $('#popupstudentid').css('border-color','red');
+            e.stopPropagation();
+            valid =false;
+
+        }
+        if ($.trim(name).length === 0){
+            $('#popupstudentname').css('border-color','red');
+            e.stopPropagation();
+            valid =false;
+        }
+        if ($.trim(cnum).length === 0){
+            $('#popupstudentcontactno').css('border-color','red');
+            e.stopPropagation();
+            valid =false;
+        }
+        if (valid){
+            student.push({
+                id:id,
+                name:name,
+                cnum:cnum
+            });
             $('#studentid').append('<option value='+id+'>'+id+'</option>');
+        }
     });
 });
