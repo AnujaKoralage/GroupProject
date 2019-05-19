@@ -1,7 +1,7 @@
 # *Student Mangement system*
 
 This system use for manage courses,manage batches and register a student.
-
+Checkout -[https://anujakoralage.github.io/GroupProject/InsPOS/](https://anujakoralage.github.io/GroupProject/InsPOS/)
 
 ### Prerequisites
 ```
